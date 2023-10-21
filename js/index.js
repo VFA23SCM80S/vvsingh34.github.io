@@ -16,8 +16,6 @@ var array =[
 "Data Analyst",
 "DevOps Engineer",
 "Database Administrator",
-"Mobile App Developer",
-"Cloud Architect",
 ];
 function updateTitle(){
     charIndex++;

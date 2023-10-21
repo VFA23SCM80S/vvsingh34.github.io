@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .side-nav{
-    width: 300px;
+    width: 250px;
     height: 100vh;
     background-color: rgb(4, 2, 0);
     position: fixed;
@@ -82,6 +82,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
+    background-position-x: right;
+    background-position-y:top;
 }
 .hero-bg-shadow-box{
     width: 100%;
@@ -122,8 +125,21 @@ opacity: 0;
 background-color: transparent;
 }
 /* end hero */
+/* start underline code */
+.about-section h2::after,.resume-section h2::after {
+    content:'';
+    position:relative;
+    display:block;
+    width :50px;
+    height: 3px;
+    background: blue;
+    top: 10px;
+    bottom:0;
+    left: 0;
+}
+/* end */
 /* Responsive coding */
-@media(max-width:1400px){
+@media(max-width:1000px){
     .side-nav{
         opacity:0;
     }
